@@ -13,7 +13,7 @@ import (
 
 func main() {
 	c := nsq.NewConsumer(nsq.ConsumerConfig{
-		ListenAddress: []string{"localhost:4161"},
+		ListenAddress: []string{"127.0.0.1:4150"},
 		Prefix:        "",
 	})
 
@@ -27,7 +27,7 @@ func main() {
 		Handler:     handlerSample,
 	})
 
-	err := c.Run()
+	err := c.RunDirect()
 	if err != nil {
 		log.Fatal(err)
 	}

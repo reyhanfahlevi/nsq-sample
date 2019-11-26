@@ -19,11 +19,11 @@
 
 [[projects]]
   branch = "master"
-  digest = "1:1bc8d91d65b0501b389d77c4b8409b5937f3b037eaff56b69fe8ac332cb0c267"
+  digest = "1:4210da9a4842197c8ad16984ac0d5f247a816aa4c263a3a82b2f7740dbcf98fe"
   name = "github.com/reyhanfahlevi/pkg"
   packages = ["go/nsq"]
   pruneopts = "UT"
-  revision = "185b22fc8126e7e0bfc448f7afaf9294bc87b948"
+  revision = "e38eb71994aaf48214f71cab2a18fb6c71c08373"
 
 [solve-meta]
   analyzer-name = "dep"
