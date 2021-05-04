@@ -7,7 +7,7 @@ import (
 )
 
 func main() {
-	pb, err := nsq.NewPublisher("localhost:4151", "")
+	pb, err := nsq.NewPublisher("127.0.0.1:4150", "")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -15,7 +15,7 @@ func main() {
 	msg := struct {
 		Test string `json:"test"`
 	}{
-		Test: "test",
+		Test: "Coba Test",
 	}
 	_ = pb.PublishWithoutPrefix("test", msg)
 }
